@@ -1,4 +1,4 @@
-package com.company.Persons.Workers;
+package com.company.Persons.Workers.Technological;
 
 import com.company.Persons.Workers.interfaces.WorkWithTechnicalEquipment;
 

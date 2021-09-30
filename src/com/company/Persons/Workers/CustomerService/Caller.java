@@ -1,4 +1,4 @@
-package com.company.Persons.Workers;
+package com.company.Persons.Workers.CustomerService;
 
 import com.company.Persons.Workers.interfaces.CleanWorkingPlace;
 import com.company.Persons.Workers.interfaces.WorkWithTechnicalEquipment;
