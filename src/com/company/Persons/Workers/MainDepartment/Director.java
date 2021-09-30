@@ -7,6 +7,10 @@ import com.company.Persons.Workers.interfaces.WorkWithMoney;
 import com.company.Persons.Workers.interfaces.WorkWithTechnicalEquipment;
 
 public class Director extends Worker implements WorkWithTechnicalEquipment, WorkWithEvaluation, WorkWithClients, WorkWithMoney {
+    public Director(String name, int age, String passport, String dateOfBirth, int salary) {
+        super(name, age, passport, dateOfBirth, salary);
+    }
+
     @Override
     public void ServeCustomer() {
 

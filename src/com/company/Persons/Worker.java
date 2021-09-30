@@ -3,15 +3,27 @@ package com.company.Persons;
 import java.util.Objects;
 
 public abstract class Worker extends Person {
-    protected int salary;
+    private int salary;
 
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public Worker(String name, int age, String passport, String dateOfBirth, int salary) {
+        super(name, age, passport, dateOfBirth);
+        this.salary = salary;
+    }
 
     @Override
     public String toString() {
         return "Worker{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
+                ", dateOfBirth='" + getDateOfBirth() + '\'' +
                 ", salary=" + salary +
                 '}';
     }
@@ -33,14 +45,14 @@ public abstract class Worker extends Person {
         Worker c = (Worker) o;
 
         // Compare the data members and return accordingly
-        return CharSequence.compare(name, c.name) == 0
-                && CharSequence.compare(dateOfBirth,c.dateOfBirth) == 0
-                && age == c.age
+        return CharSequence.compare(getName(), c.getName()) == 0
+                && CharSequence.compare(getDateOfBirth(),c.getDateOfBirth()) == 0
+                && getAge() == c.getAge()
                 && salary == c.salary;
     }
 
     @Override
     public int hashCode(){
-        return Objects.hash(name,age,dateOfBirth,salary);
+        return Objects.hash(getName(),getAge(),getDateOfBirth(),salary);
     }
 }

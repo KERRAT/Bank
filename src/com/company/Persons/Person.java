@@ -3,10 +3,50 @@ package com.company.Persons;
 import java.util.Objects;
 
 public abstract class Person {
-    protected String name;
-    protected int age;
-    protected String passport;
-    protected String dateOfBirth;
+    private String name;
+    private int age;
+    private String passport;
+    private String dateOfBirth;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getPassport() {
+        return passport;
+    }
+
+    public void setPassport(String passport) {
+        this.passport = passport;
+    }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+
+    public Person(String name, int age, String passport, String dateOfBirth) {
+        this.name = name;
+        this.age = age;
+        this.passport = passport;
+        this.dateOfBirth = dateOfBirth;
+    }
 
     @Override
     public String toString() {
