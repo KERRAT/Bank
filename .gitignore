@@ -11,3 +11,5 @@
 out/production/Bank/com/company/Main.class
 out/production/Bank/com/company/Persons/Person.class
 out/production/Bank/com/company/Persons/Visitors/Client.class
+.idea/.name
+*.xml

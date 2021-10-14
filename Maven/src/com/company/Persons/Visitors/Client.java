@@ -4,6 +4,7 @@ import com.company.CreditTimer;
 import com.company.Money;
 import com.company.Moneys.USD;
 import com.company.Persons.Person;
+import org.springframework.scheduling.annotation.Async;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -80,6 +81,7 @@ public class Client extends Person {
         this.isCreditable = isCreditable;
     }
 
+    @Async
     public void takeCredit(double amount) {
         credit = amount;
         haveCredits = true;
